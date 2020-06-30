@@ -19,7 +19,7 @@ export default (
 
   config.plugins.push(
     new webpack.EnvironmentPlugin([
-      'API_ENDPOINT'
+      'API_ENTRYPOINT'
     ])
   );
 

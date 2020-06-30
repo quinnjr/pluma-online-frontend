@@ -4,7 +4,9 @@
 export interface Plugin {
   id: number;
   name: string;
-  category_id: number;
   description: string;
-  primary_language: string;
+  category_id: number;
+  category_name: string;
+  language_name: string;
+  github_url: string;
 }

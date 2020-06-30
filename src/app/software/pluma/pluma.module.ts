@@ -5,21 +5,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 
-import { PlumaComponent } from './pluma.component';
+import { PlumaRouterModule } from './pluma-router.module';
+
+import { PlumaComponent } from './pluma/pluma.component';
 import { ApplicationComponent } from './application/application.component';
 import { PluginsComponent } from './plugins/plugins.component';
 import { PipelinesComponent } from './pipelines/pipelines.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
+    ApplicationComponent,
     PlumaComponent,
     PluginsComponent,
-    PipelinesComponent
+    PipelinesComponent,
+    SidebarComponent
   ],
   imports: [
-    // Angular modules
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    PlumaRouterModule
   ],
   providers: [],
   exports: [

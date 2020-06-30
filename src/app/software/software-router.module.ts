@@ -4,7 +4,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Route, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { List } from 'immutable';
 
 import { SoftwareComponent } from './software.component';
 

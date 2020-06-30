@@ -15,7 +15,8 @@ import { SoftwareRouterModule } from './software-router.module';
   imports: [
     CommonModule,
     HttpClientModule,
-    PlumaModule
+    PlumaModule,
+    SoftwareRouterModule
   ],
   providers: [],
   exports: [ SoftwareComponent, JasperComponent ]
